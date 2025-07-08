@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: appointment_saas_db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
+    ports:
+      - "1433:1433"
+    volumes:
+      - appointment_saas_db_data:/var/opt/mssql
+    networks:
+      - appointment_network
+
+  api:
+    build:
+      context: .
+      dockerfile: AppointmentSystem.API/Dockerfile
+    image: appointment_backend:latest
+    environment:
+      AppointmentProjectDefaultString: "${AppointmentProjectDefaultString}"
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+    networks:
+      - appointment_network
+
+volumes:
+  appointment_saas_db_data:
+
+networks:
+  appointment_network:
