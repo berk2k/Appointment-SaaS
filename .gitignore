@@ -1,0 +1,47 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+*.nuspec
+
+# Publish Output
+publish/
+
+# IIS Express
+iisexpress/
+
+# User-specific files
+*.userosscache
+*.sln.docstates
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+
+# Entity Framework Migrations
+Migrations/
+
+**/appsettings.Development.json
+**/appsettings.Local.json
