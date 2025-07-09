@@ -5,6 +5,13 @@
     <ProjectReference Include="..\AppointmentSystem.Domain\AppointmentSystem.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Multitenancy\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
