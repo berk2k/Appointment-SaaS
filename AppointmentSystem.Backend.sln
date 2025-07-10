@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentSystem.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentSystem.Tests", "AppointmentSystem.Tests\AppointmentSystem.Tests.csproj", "{DAEE217B-5E1B-4FDE-AAF1-3937413FFD2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentSystem.Common", "AppointmentSystem.Common\AppointmentSystem.Common.csproj", "{3F8CF883-47E2-447C-88FE-25041B28F545}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationSystem.Common", "ApplicationSystem.Common\ApplicationSystem.Common.csproj", "{3EA44367-CB94-42D4-97DE-329410F44EEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{DAEE217B-5E1B-4FDE-AAF1-3937413FFD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAEE217B-5E1B-4FDE-AAF1-3937413FFD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAEE217B-5E1B-4FDE-AAF1-3937413FFD2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F8CF883-47E2-447C-88FE-25041B28F545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F8CF883-47E2-447C-88FE-25041B28F545}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F8CF883-47E2-447C-88FE-25041B28F545}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F8CF883-47E2-447C-88FE-25041B28F545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA44367-CB94-42D4-97DE-329410F44EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA44367-CB94-42D4-97DE-329410F44EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA44367-CB94-42D4-97DE-329410F44EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA44367-CB94-42D4-97DE-329410F44EEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

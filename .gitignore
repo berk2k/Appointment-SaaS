@@ -6,7 +6,6 @@ obj/
 .vs/
 *.user
 *.suo
-*.csproj
 # Rider
 .idea/
 
