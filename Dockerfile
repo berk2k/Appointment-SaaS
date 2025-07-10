@@ -6,6 +6,7 @@ COPY AppointmentSystem.API/*.csproj ./AppointmentSystem.API/
 COPY AppointmentSystem.Application/*.csproj ./AppointmentSystem.Application/
 COPY AppointmentSystem.Domain/*.csproj ./AppointmentSystem.Domain/
 COPY AppointmentSystem.Infrastructure/*.csproj ./AppointmentSystem.Infrastructure/
+COPY AppointmentSystem.Common/*.csproj ./AppointmentSystem.Common/
 COPY AppointmentSystem.Tests/*.csproj ./AppointmentSystem.Tests/
 
 RUN dotnet restore
