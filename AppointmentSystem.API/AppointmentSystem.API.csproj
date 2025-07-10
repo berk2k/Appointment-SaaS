@@ -20,8 +20,8 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Middlewares\" />
-    <Folder Include="Models\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
 
 </Project>

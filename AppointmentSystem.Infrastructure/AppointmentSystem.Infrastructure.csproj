@@ -8,6 +8,10 @@
   <ItemGroup>
     <Folder Include="Multitenancy\" />
     <Folder Include="Configuration\" />
+    <Folder Include="Adapters\" />
+    <Folder Include="EventBus\" />
+    <Folder Include="EventHandlers\" />
+    <Folder Include="Services\" />
     <Folder Include="Repositories\" />
     <Folder Include="Persistence\" />
   </ItemGroup>

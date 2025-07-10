@@ -7,8 +7,11 @@
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Tenant\" />
-    <Folder Include="Services\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Specifications\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
 
   <PropertyGroup>
