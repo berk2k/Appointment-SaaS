@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AppointmentSystem.Infrastructure.Services
+namespace AppointmentSystem.Infrastructure.Extensions
 {
-    public static class InfrastructureServiceRegistration
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
