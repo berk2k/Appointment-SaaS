@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentSystem.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentSystem.Tests", "AppointmentSystem.Tests\AppointmentSystem.Tests.csproj", "{DAEE217B-5E1B-4FDE-AAF1-3937413FFD2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationSystem.Common", "ApplicationSystem.Common\ApplicationSystem.Common.csproj", "{3EA44367-CB94-42D4-97DE-329410F44EEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentSystem.Common", "ApplicationSystem.Common\AppointmentSystem.Common.csproj", "{3EA44367-CB94-42D4-97DE-329410F44EEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
