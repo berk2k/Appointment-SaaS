@@ -9,11 +9,15 @@ namespace AppointmentSystem.Infrastructure.Extensions
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            var connStr = Environment.GetEnvironmentVariable("AppointmentProjectDefaultString") ??
+                          configuration.GetConnectionString("AppointmentProjectDefaultString");
+
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("AppointmentProjectDefaultString")));
+                options.UseSqlServer(connStr));
 
             return services;
         }
+
     }
 
 }

@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var configuration = builder.Configuration;
 
-// Katmanlarý ekliyoruz
+
 builder.Services.AddInfrastructureServices(configuration);
 builder.Services.AddControllers();
 
