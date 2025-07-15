@@ -27,6 +27,9 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+// Middleware pipeline
+app.UseGlobalExceptionHandling();
+// logging
 app.UseSerilogRequestLogging();
 
 if (app.Environment.IsDevelopment())
