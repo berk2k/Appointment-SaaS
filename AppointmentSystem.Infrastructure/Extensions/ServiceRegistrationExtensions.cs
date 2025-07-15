@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace AppointmentSystem.Infrastructure.Extensions
 {
-    public static class ServiceCollectionExtensions
+    public static class ServiceRegistrationExtensions
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
