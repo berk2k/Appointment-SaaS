@@ -1,9 +1,7 @@
 ﻿using AppointmentSystem.Application.Exceptions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
-namespace AppointmentSystem.Infrastructure.Middlewares
+namespace AppointmentSystem.API.Middlewares
 {
     public class GlobalExceptionMiddleware
     {

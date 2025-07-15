@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using AppointmentSystem.Infrastructure.Extensions;
+using AppointmentSystem.API.Extensions;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
