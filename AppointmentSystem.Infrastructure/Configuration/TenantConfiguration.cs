@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AppointmentSystem.Infrastructure.Configuration
 {
-    public class TenantConfigration : IEntityTypeConfiguration<Tenant>
+    public class TenantConfiguration : IEntityTypeConfiguration<Tenant>
     {
         public void Configure(EntityTypeBuilder<Tenant> builder)
         {

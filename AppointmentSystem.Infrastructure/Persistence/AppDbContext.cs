@@ -16,7 +16,7 @@ namespace AppointmentSystem.Infrastructure.Persistence
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new BranchConfiguration());
 
-            modelBuilder.ApplyConfiguration(new TenantConfigration());
+            modelBuilder.ApplyConfiguration(new TenantConfiguration());
         }
     }
 
