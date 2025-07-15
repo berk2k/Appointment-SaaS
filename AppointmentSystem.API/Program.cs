@@ -33,6 +33,8 @@ app.UseGlobalExceptionHandling();
 // logging
 app.UseSerilogRequestLogging();
 
+app.UseRequestEnrichLogging();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
