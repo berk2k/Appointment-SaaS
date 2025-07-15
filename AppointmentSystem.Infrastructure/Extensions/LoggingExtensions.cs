@@ -9,9 +9,9 @@ namespace AppointmentSystem.Infrastructure.Extensions
         public static IHostBuilder UseCustomSerilog(this IHostBuilder hostBuilder, IConfiguration configuration)
         {
             Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Information()
-                .WriteTo.Console()
-                .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+                //.MinimumLevel.Information()
+                //.WriteTo.Console()
+                //.WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
 
