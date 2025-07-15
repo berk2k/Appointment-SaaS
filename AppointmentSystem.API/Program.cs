@@ -2,18 +2,25 @@ using Microsoft.OpenApi.Models;
 using AppointmentSystem.Infrastructure.Extensions;
 using AppointmentSystem.API.Extensions;
 using Serilog;
+using AppointmentSystem.Application.Behaviors;
+using MediatR;
+using AppointmentSystem.Application.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// logging
+// logging -> serilog
 builder.Host.UseCustomSerilog(builder.Configuration);
 
 
 var configuration = builder.Configuration;
 
 
-builder.Services.AddInfrastructureServices(configuration);
+builder.Services
+    .AddApplicationServices()
+    .AddInfrastructureServices(configuration);
+
 builder.Services.AddControllers();
+
 
 
 builder.Services.AddEndpointsApiExplorer();
