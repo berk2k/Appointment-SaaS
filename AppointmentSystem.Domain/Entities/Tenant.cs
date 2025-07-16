@@ -14,7 +14,6 @@ namespace AppointmentSystem.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public string Plan { get; set; }
         public string Status { get; set; }
-
         public ICollection<Branch> Branches { get; set; }
         //public ICollection<User> Users { get; set; }
     }

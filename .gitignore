@@ -11,7 +11,7 @@ obj/
 
 # Logs
 *.log
-
+Logs/
 # OS Files
 .DS_Store
 Thumbs.db
