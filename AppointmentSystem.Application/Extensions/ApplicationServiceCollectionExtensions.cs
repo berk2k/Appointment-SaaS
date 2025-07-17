@@ -1,8 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using AppointmentSystem.Application.Behaviors;
 using AppointmentSystem.Application.Commands.Appointment;
-using AppointmentSystem.Application.Behaviors;
-using MediatR;
+using AppointmentSystem.Application.Configuration.Mapping;
+using AppointmentSystem.Application.Mapping.Profiles;
 using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AppointmentSystem.Application.Extensions
 {
@@ -19,6 +21,9 @@ namespace AppointmentSystem.Application.Extensions
 
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+            var mapper = ApplicationMapperConfiguration.InitializeAutoMapper();
+            services.AddSingleton(mapper);
 
             return services;
         }
