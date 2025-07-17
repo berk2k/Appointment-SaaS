@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppointmentSystem.Application.Commands.Appointment
 {
-    public class CreateAppointmentCommand : IRequest<Guid>
+    public class CreateAppointmentCommand : IRequest<Guid> // will return response dto 
     {
         public Guid TenantId { get; set; }
         public Guid BranchId { get; set; }
