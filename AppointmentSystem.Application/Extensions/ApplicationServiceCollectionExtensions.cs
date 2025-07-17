@@ -2,6 +2,7 @@
 using AppointmentSystem.Application.Commands.Appointment;
 using AppointmentSystem.Application.Behaviors;
 using MediatR;
+using FluentValidation;
 
 namespace AppointmentSystem.Application.Extensions
 {
