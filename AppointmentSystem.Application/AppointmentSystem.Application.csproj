@@ -8,7 +8,6 @@
     <Folder Include="DTOs\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Specifications\" />
-    <Folder Include="Validators\" />
     <Folder Include="Queries\" />
   </ItemGroup>
 
