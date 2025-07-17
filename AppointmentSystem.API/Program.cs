@@ -14,6 +14,7 @@ var configuration = builder.Configuration;
 
 
 builder.Services
+    .AddApiServices()
     .AddApplicationServices()
     .AddInfrastructureServices(configuration);
 

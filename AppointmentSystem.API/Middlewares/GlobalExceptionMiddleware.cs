@@ -1,4 +1,4 @@
-﻿using AppointmentSystem.Application.Exceptions;
+﻿using AppointmentSystem.API.Handlers.Interfaces;
 using System.Text.Json;
 
 namespace AppointmentSystem.API.Middlewares
@@ -7,11 +7,13 @@ namespace AppointmentSystem.API.Middlewares
     {
         private readonly RequestDelegate _next;
         private readonly ILogger<GlobalExceptionMiddleware> _logger;
+        private readonly IEnumerable<IExceptionHandler> _exceptionHandlers;
 
-        public GlobalExceptionMiddleware(RequestDelegate next, ILogger<GlobalExceptionMiddleware> logger)
+        public GlobalExceptionMiddleware(RequestDelegate next, ILogger<GlobalExceptionMiddleware> logger, IEnumerable<IExceptionHandler> exceptionHandlers)
         {
             _next = next;
             _logger = logger;
+            _exceptionHandlers = exceptionHandlers;
         }
 
         public async Task InvokeAsync(HttpContext context)
@@ -23,31 +25,32 @@ namespace AppointmentSystem.API.Middlewares
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unhandled exception occurred");
-                await HandleExceptionAsync(context, ex);
+
+                var handler = _exceptionHandlers.FirstOrDefault(h => h.CanHandle(ex));
+                if (handler != null)
+                {
+                    await handler.HandleAsync(context, ex);
+                }
+                else
+                {
+                    await HandleUnknownExceptionAsync(context, ex);
+                }
             }
         }
 
-        private static async Task HandleExceptionAsync(HttpContext context, Exception exception)
+        private static async Task HandleUnknownExceptionAsync(HttpContext context, Exception exception)
         {
+            context.Response.StatusCode = 500;
             context.Response.ContentType = "application/json";
 
             var response = new
             {
-                message = "An error occurred",
+                message = "An internal server error occurred.",
                 details = exception.Message
-            };
-
-            context.Response.StatusCode = exception switch
-            {
-                CustomNotFoundException => 404,
-                CustomValidationException => 400,
-                CustomUnauthorizedException => 401,
-                _ => 500
             };
 
             await context.Response.WriteAsync(JsonSerializer.Serialize(response));
         }
-
-
     }
+
 }

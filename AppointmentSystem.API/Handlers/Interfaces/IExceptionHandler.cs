@@ -1,6 +1,6 @@
-﻿namespace AppointmentSystem.API.Middlewares.Interfaces
+﻿namespace AppointmentSystem.API.Handlers.Interfaces
 {
-    public interface IExceptionHandlerMiddleware
+    public interface IExceptionHandler
     {
         bool CanHandle(Exception exception);
         Task HandleAsync(HttpContext context, Exception exception);
