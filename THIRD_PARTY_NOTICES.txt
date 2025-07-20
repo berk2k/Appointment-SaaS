@@ -1,0 +1,198 @@
+####################################################################################################
+Package:coverlet.collector
+Version:6.0.0
+project URL:https://github.com/coverlet-coverage/coverlet
+Description:Coverlet is a cross platform code coverage library for .NET, with support for line, branch and method coverage.
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:FluentValidation
+Version:12.0.0
+project URL:https://fluentvalidation.net/
+Description:A validation library for .NET that uses a fluent interface to construct strongly-typed validation rules.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:FluentValidation
+Version:12.0.0
+project URL:https://fluentvalidation.net/
+Description:A validation library for .NET that uses a fluent interface to construct strongly-typed validation rules.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:FluentValidation.DependencyInjectionExtensions
+Version:12.0.0
+project URL:https://fluentvalidation.net/
+Description:Dependency injection extensions for FluentValidation
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Microsoft.AspNetCore.Http.Abstractions
+Version:2.3.0
+project URL:https://asp.net/
+Description:ASP.NET Core HTTP object model for HTTP requests and responses and also common extension methods for registering middleware in an IApplicationBuilder.
+Commonly used types:
+Microsoft.AspNetCore.Builder.IApplicationBuilder
+Microsoft.AspNetCore.Http.HttpContext
+Microsoft.AspNetCore.Http.HttpRequest
+Microsoft.AspNetCore.Http.HttpResponse
+licenseUrl:https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt
+license Type:
+
+####################################################################################################
+Package:Microsoft.AspNetCore.OpenApi
+Version:8.0.10
+project URL:https://asp.net/
+Description:Provides APIs for annotating route handler endpoints in ASP.NET Core with OpenAPI annotations.
+
+This package was built from the source code at https://github.com/dotnet/aspnetcore/tree/c2a442982e736e17ae6bcadbfd8ccba278ee1be6
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.EntityFrameworkCore
+Version:8.0.18
+project URL:https://docs.microsoft.com/ef/core/
+Description:Entity Framework Core is a modern object-database mapper for .NET. It supports LINQ queries, change tracking, updates, and schema migrations. EF Core works with SQL Server, Azure SQL Database, SQLite, Azure Cosmos DB, MySQL, PostgreSQL, and other databases through a provider plugin API.
+
+Commonly Used Types:
+Microsoft.EntityFrameworkCore.DbContext
+Microsoft.EntityFrameworkCore.DbSet
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.EntityFrameworkCore.Design
+Version:8.0.18
+project URL:https://docs.microsoft.com/ef/core/
+Description:Shared design-time components for Entity Framework Core tools.
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.EntityFrameworkCore.SqlServer
+Version:8.0.18
+project URL:https://docs.microsoft.com/ef/core/
+Description:Microsoft SQL Server database provider for Entity Framework Core.
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.Extensions.Configuration.Abstractions
+Version:8.0.0
+project URL:https://dot.net/
+Description:Provides abstractions of key-value pair based configuration. Interfaces defined in this package are implemented by classes in Microsoft.Extensions.Configuration and other configuration packages.
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.Extensions.Configuration.EnvironmentVariables
+Version:9.0.7
+project URL:https://dot.net/
+Description:Environment variables configuration provider implementation for Microsoft.Extensions.Configuration. This package enables you to read configuration parameters from environment variables. You can use EnvironmentVariablesExtensions.AddEnvironmentVariables extension method on IConfigurationBuilder to add the environment variables configuration provider to the configuration builder.
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.Extensions.Logging.Abstractions
+Version:8.0.3
+project URL:https://dot.net/
+Description:Logging abstractions for Microsoft.Extensions.Logging.
+
+Commonly Used Types:
+Microsoft.Extensions.Logging.ILogger
+Microsoft.Extensions.Logging.ILoggerFactory
+Microsoft.Extensions.Logging.ILogger<TCategoryName>
+Microsoft.Extensions.Logging.LogLevel
+Microsoft.Extensions.Logging.Logger<T>
+Microsoft.Extensions.Logging.LoggerMessage
+Microsoft.Extensions.Logging.Abstractions.NullLogger
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:Microsoft.NET.Test.Sdk
+Version:17.8.0
+project URL:https://github.com/microsoft/vstest
+Description:The MSbuild targets and properties for building .NET test projects.
+licenseUrl:https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/17.8.0/License
+license Type:LICENSE_MIT.txt
+
+####################################################################################################
+Package:Serilog
+Version:4.3.0
+project URL:https://serilog.net/
+Description:Simple .NET logging with fully-structured events
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Serilog.AspNetCore
+Version:8.0.3
+project URL:https://github.com/serilog/serilog-aspnetcore
+Description:Serilog support for ASP.NET Core logging
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Serilog.Extensions.Hosting
+Version:8.0.0
+project URL:https://github.com/serilog/serilog-extensions-hosting
+Description:Serilog support for .NET Core logging in hosted services
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Serilog.Settings.Configuration
+Version:8.0.4
+project URL:https://github.com/serilog/serilog-settings-configuration
+Description:Microsoft.Extensions.Configuration (appsettings.json) support for Serilog.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Serilog.Sinks.Console
+Version:6.0.0
+project URL:https://github.com/serilog/serilog-sinks-console
+Description:A Serilog sink that writes log events to the console/terminal.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Serilog.Sinks.File
+Version:7.0.0
+project URL:https://github.com/serilog/serilog-sinks-file
+Description:Write Serilog events to text files in plain or JSON format.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:Swashbuckle.AspNetCore
+Version:6.6.2
+project URL:https://github.com/domaindrivendev/Swashbuckle.AspNetCore
+Description:Swagger tools for documenting APIs built on ASP.NET Core
+licenseUrl:https://licenses.nuget.org/MIT
+license Type:MIT
+
+####################################################################################################
+Package:xunit
+Version:2.5.3
+project URL:
+Description:xUnit.net is a developer testing framework, built to support Test Driven Development, with a design goal of extreme simplicity and alignment with framework features.
+
+Installing this package installs xunit.core, xunit.assert, and xunit.analyzers.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
+####################################################################################################
+Package:xunit.runner.visualstudio
+Version:2.5.3
+project URL:
+Description:Visual Studio 2022+ Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests. Supports .NET 4.6.2 or later, and .NET 6 or later.
+licenseUrl:https://licenses.nuget.org/Apache-2.0
+license Type:Apache-2.0
+
