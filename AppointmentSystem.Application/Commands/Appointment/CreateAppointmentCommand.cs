@@ -1,10 +1,5 @@
-﻿using AppointmentSystem.Domain.Enums;
-using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AppointmentSystem.Common.Interfaces.Mediator;
+using AppointmentSystem.Domain.Enums;
 
 namespace AppointmentSystem.Application.Commands.Appointment
 {

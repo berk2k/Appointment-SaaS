@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\ApplicationSystem.Common\AppointmentSystem.Common.csproj" />
     <ProjectReference Include="..\AppointmentSystem.Domain\AppointmentSystem.Domain.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,6 @@
-﻿using AppointmentSystem.Infrastructure.Persistence;
+﻿using AppointmentSystem.Common.Interfaces.Mediator;
+using AppointmentSystem.Infrastructure.Mediator;
+using AppointmentSystem.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,9 +17,16 @@ namespace AppointmentSystem.Infrastructure.Extensions
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connStr));
 
+            
+            services.AddTransient<IMediator, ManualMediator>();
+
+            // other Infrastructure Services
+            // services.AddTransient<IEmailService, EmailService>();
+            // services.AddTransient<IFileService, FileService>();
+            // services.AddHttpClient();
+
             return services;
         }
-
     }
 
 }
