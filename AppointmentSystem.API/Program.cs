@@ -36,6 +36,8 @@ var app = builder.Build();
 
 // Middleware pipeline
 app.UseGlobalExceptionHandling();
+
+app.UseTenantHandling();
 // logging
 app.UseSerilogRequestLogging();
 
