@@ -22,7 +22,8 @@ public class Appointment
 
     public ICollection<AppointmentService> AppointmentServices { get; set; }
 
-    public ICollection<Notification> Notifications { get; set; } 
+    public ICollection<Notification> Notifications { get; set; }
 
+    public ICollection<AppointmentHistory> History { get; set; }
 
 }

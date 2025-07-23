@@ -27,6 +27,8 @@ namespace AppointmentSystem.Infrastructure.Persistence
 
         public DbSet <Notification> Notifications { get; set; }
 
+        public DbSet<AppointmentHistory> AppointmentHistories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -53,7 +55,7 @@ namespace AppointmentSystem.Infrastructure.Persistence
 
             modelBuilder.ApplyConfiguration(new NotificationConfiguration());
 
-
+            modelBuilder.ApplyConfiguration(new AppointmentHistoryConfiguration());
 
 
         }
