@@ -19,4 +19,10 @@ public class Appointment
     public DateTime StartTime { get; set; }
     public DateTime EndTime { get; set; }
     public AppointmentStatus Status { get; set; }
+
+    public ICollection<AppointmentService> AppointmentServices { get; set; }
+
+    public ICollection<Notification> Notifications { get; set; } 
+
+
 }

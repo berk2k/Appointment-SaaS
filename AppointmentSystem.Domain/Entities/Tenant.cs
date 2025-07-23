@@ -17,5 +17,11 @@
         public ICollection<CustomerTenant> CustomerTenants { get; set; }
 
         public ICollection<Appointment> Appointments { get; set;}
+
+        public ICollection<Service> Services { get; set; }
+
+        public ICollection<Notification> Notifications { get; set; } 
+
+
     }
 }
