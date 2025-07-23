@@ -16,7 +16,8 @@ namespace AppointmentSystem.Domain.Entities
         public string Status { get; set; }
         public bool IsActive { get; }
         public ICollection<Branch> Branches { get; set; }
-        //public ICollection<User> Users { get; set; }
+        
+        public ICollection<User> Users { get; set; }
     }
 
 }
