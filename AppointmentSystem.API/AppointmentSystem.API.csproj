@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApplicationSystem.Common\AppointmentSystem.Common.csproj" />
     <ProjectReference Include="..\AppointmentSystem.Application\AppointmentSystem.Application.csproj" />
     <ProjectReference Include="..\AppointmentSystem.Infrastructure\AppointmentSystem.Infrastructure.csproj" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 using AppointmentSystem.API.Extensions;
 using AppointmentSystem.Application.Extensions;
+using AppointmentSystem.Common.Extensions;
 using AppointmentSystem.Infrastructure.Extensions;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -14,6 +15,7 @@ var configuration = builder.Configuration;
 
 
 builder.Services
+    .AddManualMapping()
     .AddApiServices()
     .AddApplicationServices()
     .AddInfrastructureServices(configuration);

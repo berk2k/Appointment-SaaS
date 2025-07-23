@@ -1,4 +1,7 @@
-﻿namespace AppointmentSystem.Common.Mappings
+﻿using AppointmentSystem.Common.Multitenancy;
+using Microsoft.Extensions.Logging;
+
+namespace AppointmentSystem.Common.Mappings
 {
     public abstract class BaseMapper<TSource, TDestination> : IMapper<TSource, TDestination>
     {
@@ -33,30 +36,6 @@
         public virtual async Task<List<TDestination>> MapAsync(List<TSource> sources)
         {
             return await Task.FromResult(Map(sources));
-        }
-
-        protected T GetTenantSetting<T>(string key, T defaultValue = default(T))
-        {
-            try
-            {
-                if (_tenantContext?.TenantSettings?.TryGetValue(key, out var value) == true)
-                {
-                    return (T)Convert.ChangeType(value, typeof(T));
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogWarning(ex, "Error getting tenant setting {Key}", key);
-            }
-            return defaultValue;
-        }
-
-        protected string GetLocalizedText(string key, string defaultText = null)
-        {
-            var culture = _tenantContext?.Culture ?? "en-US";
-            // localization logic ...
-
-            return defaultText ?? key;
         }
     }
 }
