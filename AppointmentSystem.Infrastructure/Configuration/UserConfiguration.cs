@@ -30,9 +30,6 @@ namespace AppointmentSystem.Infrastructure.Configuration
             builder.Property(u => u.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-            builder.HasOne(u => u.Tenant)
-                .WithMany(t => t.Users)
-                .HasForeignKey(u => u.TenantId);
         }
     }
 }

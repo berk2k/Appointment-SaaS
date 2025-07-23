@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppointmentSystem.Domain.Entities
+﻿namespace AppointmentSystem.Domain.Entities
 {
     public class Branch
     {
@@ -16,6 +10,9 @@ namespace AppointmentSystem.Domain.Entities
         public DateTime CreatedAt { get; set; }
 
         public Tenant Tenant { get; set; }
+
+        public ICollection<UserBranch> UserBranches { get; set; }
+
     }
 
 }

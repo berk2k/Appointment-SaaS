@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppointmentSystem.Domain.Entities
+﻿namespace AppointmentSystem.Domain.Entities
 {
     public class Tenant
     {
@@ -15,9 +9,11 @@ namespace AppointmentSystem.Domain.Entities
         public string Plan { get; set; }
         public string Status { get; set; }
         public bool IsActive { get; }
-        public ICollection<Branch> Branches { get; set; }
-        
-        public ICollection<User> Users { get; set; }
-    }
 
+        public ICollection<Branch> Branches { get; set; }
+
+        public ICollection<TenantUser> TenantUsers { get; set; }
+
+        public ICollection<CustomerTenant> CustomerTenants { get; set; }
+    }
 }
