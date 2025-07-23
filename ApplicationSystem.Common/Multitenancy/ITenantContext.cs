@@ -2,7 +2,7 @@
 {
     public interface ITenantContext
     {
-        string TenantId { get; }
+        Guid TenantId { get; }
         string Domain { get; }
         string Plan { get; }
         string Status { get; }
