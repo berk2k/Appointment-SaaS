@@ -19,6 +19,8 @@ namespace AppointmentSystem.Infrastructure.Persistence
 
         public DbSet<CustomerTenant> CustomersTenant { get; set; }
 
+        public DbSet<Appointment> Appointments { get; set; }    
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -36,6 +38,8 @@ namespace AppointmentSystem.Infrastructure.Persistence
             modelBuilder.ApplyConfiguration(new UserBranchConfiguration());
 
             modelBuilder.ApplyConfiguration(new CustomerTenantConfiguration());
+
+            modelBuilder.ApplyConfiguration(new AppointmentConfiguration());
 
 
 

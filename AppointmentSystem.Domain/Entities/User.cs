@@ -13,5 +13,7 @@ namespace AppointmentSystem.Domain.Entities
         public ICollection<TenantUser> TenantUsers { get; set; }
 
         public ICollection<UserBranch> UserBranches { get; set; }
+
+        public ICollection<Appointment> Appointments { get; set; }
     }
 }

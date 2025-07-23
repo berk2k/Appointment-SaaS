@@ -15,5 +15,7 @@
         public ICollection<TenantUser> TenantUsers { get; set; }
 
         public ICollection<CustomerTenant> CustomerTenants { get; set; }
+
+        public ICollection<Appointment> Appointments { get; set;}
     }
 }

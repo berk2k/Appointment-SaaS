@@ -16,6 +16,8 @@ namespace AppointmentSystem.Domain.Entities
         public DateTime CreatedAt { get; set; }
 
         public ICollection<CustomerTenant> CustomerTenants { get; set; }
+
+        public ICollection<Appointment> Appointments { get; set; }
     }
 
 

@@ -13,6 +13,8 @@
 
         public ICollection<UserBranch> UserBranches { get; set; }
 
+        public ICollection<Appointment> Appointments { get; set; }
+
     }
 
 }
