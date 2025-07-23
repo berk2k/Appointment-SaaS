@@ -1,4 +1,5 @@
 ﻿using AppointmentSystem.Domain.Entities;
+using AppointmentSystem.Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -15,8 +16,10 @@ namespace AppointmentSystem.Infrastructure.Configuration
                 .HasMaxLength(100);
 
             builder.Property(u => u.Email)
-                .IsRequired()
-                .HasMaxLength(100);
+                .HasEmailConversion();
+
+            builder.Property(u => u.PhoneNumber)
+                .HasPhoneNumberConversion();
 
             builder.HasIndex(u => u.Email)
                 .IsUnique();
@@ -32,5 +35,4 @@ namespace AppointmentSystem.Infrastructure.Configuration
                 .HasForeignKey(u => u.TenantId);
         }
     }
-
 }
