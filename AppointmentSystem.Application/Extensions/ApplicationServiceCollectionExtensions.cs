@@ -1,8 +1,11 @@
 ﻿using AppointmentSystem.Application.Behaviors;
 using AppointmentSystem.Application.Commands.Appointment;
-using AppointmentSystem.Application.Configuration.Mapping;
+using AppointmentSystem.Application.DTOs.Branch;
+using AppointmentSystem.Application.Mappings;
 using AppointmentSystem.Common.Behaviors;
 using AppointmentSystem.Common.Interfaces.Mediator;
+using AppointmentSystem.Common.Mappings;
+using AppointmentSystem.Domain.Entities;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,9 +25,12 @@ namespace AppointmentSystem.Application.Extensions
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
+            services.AddScoped<IMapperFactory, MapperFactory>();
+            services.AddScoped<IMapper<CreateBranchRequest, Branch>, CreateBranchMapper>();
+            services.AddScoped<IMapper<Branch, BranchResponse>, BranchResponseMapper>();
 
-            var mapper = ApplicationMapperConfiguration.InitializeAutoMapper();
-            services.AddSingleton(mapper);
+
+
 
             return services;
         }
