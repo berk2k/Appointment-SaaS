@@ -17,7 +17,7 @@ namespace AppointmentSystem.Infrastructure.Persistence
         public DbSet<UserBranch> UserBranches { get; set; }
         public DbSet<Customer> Customers { get; set; }
 
-        public DbSet<CustomerTenant> CustomersTenant { get; set; }
+        public DbSet<CustomerTenant> CustomerTenants { get; set; }
 
         public DbSet<Appointment> Appointments { get; set; }    
 
