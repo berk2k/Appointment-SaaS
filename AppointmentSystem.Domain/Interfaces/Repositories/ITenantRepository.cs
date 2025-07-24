@@ -1,6 +1,6 @@
 ﻿using AppointmentSystem.Domain.Entities;
 
-namespace AppointmentSystem.Domain.Interfaces
+namespace AppointmentSystem.Domain.Interfaces.Repositories
 {
     public interface ITenantRepository : IRepository<Tenant>
     {

@@ -1,4 +1,4 @@
-﻿namespace AppointmentSystem.Domain.Interfaces
+﻿namespace AppointmentSystem.Domain.Interfaces.Repositories
 {
     public interface IRepository<T> where T : class
     {
