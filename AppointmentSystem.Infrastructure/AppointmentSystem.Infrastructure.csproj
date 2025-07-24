@@ -10,7 +10,6 @@
     <Folder Include="EventBus\" />
     <Folder Include="EventHandlers\" />
     <Folder Include="Persistence\Migrations\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
