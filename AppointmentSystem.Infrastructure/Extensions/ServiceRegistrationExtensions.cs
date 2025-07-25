@@ -1,4 +1,6 @@
-﻿using AppointmentSystem.Common.Interfaces.Mediator;
+﻿using AppointmentSystem.Application.Interfaces.Authentication;
+using AppointmentSystem.Common.Interfaces.Mediator;
+using AppointmentSystem.Infrastructure.Authentication;
 using AppointmentSystem.Infrastructure.Mediator;
 using AppointmentSystem.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +23,10 @@ namespace AppointmentSystem.Infrastructure.Extensions
             services.AddTransient<IMediator, ManualMediator>();
 
             services.AddJwtAuthentication(configuration);
+
+            services.AddHttpContextAccessor();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+
 
             // other Infrastructure Services
             // services.AddTransient<IEmailService, EmailService>();
