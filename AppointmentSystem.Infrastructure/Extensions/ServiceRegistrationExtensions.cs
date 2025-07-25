@@ -20,6 +20,8 @@ namespace AppointmentSystem.Infrastructure.Extensions
             
             services.AddTransient<IMediator, ManualMediator>();
 
+            services.AddJwtAuthentication(configuration);
+
             // other Infrastructure Services
             // services.AddTransient<IEmailService, EmailService>();
             // services.AddTransient<IFileService, FileService>();

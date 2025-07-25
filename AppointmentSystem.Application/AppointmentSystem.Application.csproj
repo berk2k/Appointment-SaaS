@@ -6,7 +6,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Specifications\" />
     <Folder Include="Queries\" />
   </ItemGroup>
