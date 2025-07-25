@@ -37,7 +37,7 @@ var app = builder.Build();
 // Middleware pipeline
 app.UseGlobalExceptionHandling();
 
-app.UseTenantHandling();
+
 // logging
 app.UseSerilogRequestLogging();
 
@@ -52,8 +52,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
-app.UseAuthorization();
+app.UseTenantHandling();
 app.UseTenantAccessHandling();
+app.UseAuthorization();
+
 
 app.MapControllers();
 

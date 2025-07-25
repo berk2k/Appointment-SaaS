@@ -25,7 +25,7 @@ namespace AppointmentSystem.Infrastructure.Authentication
             new(JwtRegisteredClaimNames.Email, user.Email.Value),
             new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new(ClaimTypes.MobilePhone, user.PhoneNumber.Value),
-            new("tenant_id", activeTenantId.ToString())
+            new("tenantId", activeTenantId.ToString())
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
