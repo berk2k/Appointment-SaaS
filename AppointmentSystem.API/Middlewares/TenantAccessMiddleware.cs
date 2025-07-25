@@ -1,4 +1,6 @@
-﻿namespace AppointmentSystem.API.Middlewares
+﻿using AppointmentSystem.Application.Exceptions;
+
+namespace AppointmentSystem.API.Middlewares
 {
     public class TenantAccessMiddleware
     {
@@ -27,9 +29,8 @@
                 {
                     if (!string.Equals(routeTenantId, userTenantId, StringComparison.OrdinalIgnoreCase))
                     {
-                        context.Response.StatusCode = StatusCodes.Status403Forbidden;
-                        await context.Response.WriteAsync("Forbidden: You cannot access another tenant's data.");
-                        return;
+                        throw new CustomForbiddenException("Forbidden access");
+                        
                     }
                 }
             }
