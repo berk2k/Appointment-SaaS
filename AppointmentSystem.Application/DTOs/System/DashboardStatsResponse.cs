@@ -1,4 +1,4 @@
-﻿namespace AppointmentSystem.Application.DTOs.Tenant
+﻿namespace AppointmentSystem.Application.DTOs.System
 {
     public class DashboardStatsResponse
     {
